@@ -1,0 +1,16 @@
+<html lang="pt_BR">
+	<head>
+		<meta charset="UTF-8">
+		{% if title %}
+			<title>{{title}}</title>
+		{% else %}
+			<title>Aula de BCD </title>
+		{% endif %}
+	</head>
+	<body>
+		<H1>Agenda de contatos </H1>
+		<a href="listar">Listar</a> | <a href = "inserir">Inserir</a>
+		<hr>
+		{% block content %}{% endblock %}
+	</body>
+</html>

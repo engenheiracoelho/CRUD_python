@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<H2> Adicionar novo contato </H2>
+
+<form action="{{ url_for('inserir')}}" method="POST">
+	<p>Nome:
+	<br><input type="text" name="Nome" required >
+	<p>Email:
+	<br><input type="text" name="Email" required >
+	<br><input type = "submit" value= "Cadastrar" >
+</form>
+
+
+{% endblock %}

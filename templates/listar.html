@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<H2> Lista de contatos </H2>
+
+<table>
+	<tr>
+		<th>ID</th>
+		<th>Nome</th>
+		<th>Email</th>
+	</tr>
+	{% for pessoa in contatos %}
+		<tr>
+			<td><a href="'/editar?ID={{ pessoa.ID }}'>{{ pessoa.ID }}</a></td>
+			<td>{{ pessoa.Nome }}</td>
+			<td>{{ pessoa.Email }}</td>
+		</tr>
+	{% endfor %}
+</table>
+
+{% endblock %}

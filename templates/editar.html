@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+<H2> Adicionar novo contato </H2>
+
+<form action="{{ url_for('editar')}}" method="POST">
+    {%  for c in contato %}
+	<p>Nome:
+	<br><input type="text" name="Nome" value="{{ c.Nome }}" required>
+	<p>Email:
+	<br><input type="text" name="Email"  value="{{ c.Email }}" required>
+	<br><input type = "submit" value= "Atualizar" >
+</form>
+{% endblock %}
