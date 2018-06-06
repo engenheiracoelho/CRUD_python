@@ -16,4 +16,4 @@ Using Pycharm, just open this project and run.
 
 * [MySQLWorkbench](https://dev.mysql.com/downloads/workbench/) - Database Design & Modeling
 * [Atom](https://atom.io/) - Text editor
-* [Pycharm Professional](https://www.jetbrains.com/pycharm/download/)-
+* [Pycharm Professional](https://www.jetbrains.com/pycharm/download/) - Integrated development environment (IDE) for Python programmers.
